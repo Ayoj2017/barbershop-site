@@ -1,8 +1,8 @@
 
-const [saved, setSaved] = useState(false);
+
 import { useState } from "react";
 
-
+const [saved, setSaved] = useState(false);
 
 const Admin = ({ name, setName, tagline, setTagline, phone, setPhone }: any) => {
 
@@ -10,19 +10,7 @@ const Admin = ({ name, setName, tagline, setTagline, phone, setPhone }: any) => 
   const [localTagline, setLocalTagline] = useState(tagline);
   const [localPhone, setLocalPhone] = useState(phone);
 
-
-
-//   const handleUpdate = (updatedData: any) => {
-//     fetch("https://barbershop-backend-3whh.onrender.com/api/data", {
-//       method: "POST",
-//       headers: {
-//         "Content-Type": "application/json",
-//       },
-//       body: JSON.stringify(updatedData),
-//     }).then(() => {
-//       window.location.href = "/";
-//     });
-//   };
+  
 
 
 const handleUpdate = () => {
