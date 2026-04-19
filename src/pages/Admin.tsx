@@ -1,8 +1,8 @@
 
-
+const [saved, setSaved] = useState(false);
 import { useState } from "react";
 
-const [saved, setSaved] = useState(false);
+
 
 const Admin = ({ name, setName, tagline, setTagline, phone, setPhone }: any) => {
 
