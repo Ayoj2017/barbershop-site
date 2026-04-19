@@ -28,7 +28,7 @@ useEffect(() => {
 useEffect(() => {
   if (!name) return;
 
-  fetch("http://localhost:5000/api/data", {
+  fetch("https://barbershop-backend-3whh.onrender.com/api/data", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
