@@ -34,7 +34,15 @@ useEffect(() => {
       "Content-Type": "application/json",
     },
     body: JSON.stringify({ name, tagline, phone }),
-  });
+  }).then(() => {
+    return fetch("https://barbershop-backend-3whh.onrender.com/api/data");
+  })
+    .then((res) => res.json())
+    .then((data) => {
+      setName(data.name);
+      setTagline(data.tagline);
+      setPhone(data.phone);
+    });
 }, [name, tagline, phone]);
 
 
